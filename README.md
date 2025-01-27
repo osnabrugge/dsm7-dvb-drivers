@@ -3,12 +3,12 @@ I'm writing this since it could be helpful to everyone trying to make common USB
 
 Some specs:
 
-- Model: Synology DS720+ 
+- Model: Synology DS1821+ 
 - Arch: x86_64
-- Core Name: Gemini Lake
-- OS: DSM 7.2.1-69057 Update 3
+- Core Name: V1000
+- OS: DSM 7.2.2-72806 Update 2
 - Linux Kernel 4.4.302+
-- The USB-DVB device I'm using is a [**Hauppauge WinTV-dualHD**](https://www.hauppauge.com/pages/products/data_dualhd.html), currently available on Amazon for about €70.
+- The USB-DVB device I'm using is a [**MyGica A681B ATSC Tuner**](https://www.mygica.com/product/a681/), currently available on Amazon for about $40 CAD.
   - This device is reported to be supported inside the Linux Kernel from 4.17, but the Synology Kernel is 4.4.302+. So, we'll have to compile the kernel modules ourselves.
 
 This guide will use the `media_build` repo from [**Linuxtv**](https://git.linuxtv.org/media_build.git) to compile the kernel modules. This repo backports patches to use more recent devices in legacy kernels. This repo is EOL, but it should work for a myriad of devices, and there are no other alternatives to my knowledge.
